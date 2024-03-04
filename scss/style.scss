@@ -1,0 +1,42 @@
+
+@import "mixin";
+@import "variables";
+@import "componentes";
+@import "fuentes";
+
+.estiloProducto{
+    background-color: gray;
+    border-radius: 5%;
+    border: solid 1px black;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
+
+}
+
+.estiloProducto:hover{
+    border: solid 2px g;
+    background-color: beige;
+}
+
+.estiloContenedorProductos{
+   @include contenedor;
+   background-color: blue;
+   min-height: 800px;
+   max-height: 800px;
+   max-width: 1200Px;
+  
+}
+
+.estiloBody{
+    background-color: grey;
+}
+
+#formularioPro{
+    background-color: beige;
+    align-items: center;
+    max-width: 500px;
+    max-height: 300px;
+    @include contenedor;
+    visibility: hidden;
+}
